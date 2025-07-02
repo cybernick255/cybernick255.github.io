@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Nick | iOS Developer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>Nick</h1>
+    <h2>iOS Developer Portfolio</h2>
+  </header>
+
+  <section class="projects">
+    <div class="card" onclick="openModal('modal1')">
+      <h3>Pocketpack</h3>
+      <p>All-in-one outdoor companion that keeps track of gear using SwiftData.</p>
+    </div>
+
+    <div class="card" onclick="openModal('modal2')">
+      <h3>Fusion</h3>
+      <p>Collaborative music playback app designed for group listening experiences.</p>
+    </div>
+
+    <div class="card" onclick="openModal('modal3')">
+      <h3>Commas</h3>
+      <p>Net worth tracking app.</p>
+    </div>
+
+    <div class="card" onclick="openModal('modal4')">
+      <h3>Expense Tracker</h3>
+      <p>Expense tracking app.</p>
+    </div>
+
+    <div class="card" onclick="openModal('modal5')">
+      <h3>E-Commerce</h3>
+      <p>Simple shopping app.</p>
+    </div>
+  </section>
+
+  <!-- Modals -->
+  <div class="modal" id="modal1">
+    <div class="modal-content">
+      <button class="close-btn" onclick="closeModal('modal1')">&times;</button>
+      <h2>Pocketpack</h2>
+      <p>Pocketpack is an all-in-one outdoor companion, designed to help users plan smarter, pack better, and explore the outdoors with confidence.</p>
+      <div class="image-grid">
+        <img src="Assets/Pocketpack/HomeView.png" alt="Home view">
+        <img src="Assets/Pocketpack/GuideView.png" alt="Guide view">
+        <img src="Assets/Pocketpack/TopicView.png" alt="Topic view">
+        <img src="Assets/Pocketpack/GearView.png" alt="Gear view">
+        <img src="Assets/Pocketpack/SettingsView.png" alt="Settings view">
+      </div>
+      <div class="tags">
+        <div class="tag">Swift</div>
+        <div class="tag">SwiftUI</div>
+        <div class="tag">SwiftData</div>
+      </div>
+      <p><a href="https://apps.apple.com/us/app/pocketpack/id6745767558" target="_blank">View on App Store</a></p>
+      <p><a href="https://github.com/cybernick255/pocketpack" target="_blank">View on GitHub</a></p>
+    </div>
+  </div>
+
+  <div class="modal" id="modal2">
+    <div class="modal-content">
+      <button class="close-btn" onclick="closeModal('modal2')">&times;</button>
+      <h2>Fusion</h2>
+      <p>Fusion is a music app that connects people to a shared queue that lets people hanging out control the music the group is listening to, on their own devices.</p>
+      <div class="image-grid">
+        <img src="Assets/Fusion/HomeView.PNG" alt="Home view">
+        <img src="Assets/Fusion/LibraryView.PNG" alt="Library view">
+        <img src="Assets/Fusion/FriendsView.PNG" alt="Friends view">
+        <img src="Assets/Fusion/ShopView.PNG" alt="Shop view">
+        <img src="Assets/Fusion/AccountView.PNG" alt="Account view">
+        <img src="Assets/Fusion/HostView.PNG" alt="Host view">
+      </div>
+      <div class="tags">
+        <div class="tag">Swift</div>
+        <div class="tag">SwiftUI</div>
+        <div class="tag">MusicKit</div>
+        <div class="tag">CoreBluetooth</div>
+        <div class="tag">CloudKit</div>
+        <div class="tag">UserNotifications</div>
+      </div>
+      <p><a href="https://github.com/cybernick255/fusion" target="_blank">View on GitHub</a></p>
+    </div>
+  </div>
+
+  <div class="modal" id="modal3">
+    <div class="modal-content">
+      <button class="close-btn" onclick="closeModal('modal3')">&times;</button>
+      <h2>Commas</h2>
+      <p>Commas is a finance app that lets users keep track of their net worth over time.</p>
+      <div class="image-grid">
+        <img src="Assets/Commas/NetWorthView.PNG" alt="Net worth view">
+        <img src="Assets/Commas/NetWorthItemValueAddView.PNG" alt="Net worth item value add view">
+        <img src="Assets/Commas/NetWorthHistoryView.PNG" alt="Net worth history view">
+        <img src="Assets/Commas/NetWorthHistoryMonthView.PNG" alt="Net worth history month view">
+        <img src="Assets/Commas/NetWorthHistoryDetailView.PNG" alt="Net worth history detail view">
+        <img src="Assets/Commas/NotificationsView.PNG" alt="Notifications view">
+      </div>
+      <div class="tags">
+        <div class="tag">Swift</div>
+        <div class="tag">SwiftUI</div>
+        <div class="tag">SwiftData</div>
+        <div class="tag">Charts</div>
+        <div class="tag">UserNotifications</div>
+      </div>
+      <p><a href="https://github.com/cybernick255/commas" target="_blank">View on GitHub</a></p>
+    </div>
+  </div>
+
+  <div class="modal" id="modal4">
+    <div class="modal-content">
+      <button class="close-btn" onclick="closeModal('modal4')">&times;</button>
+      <h2>Expense Tracker</h2>
+      <p>Expense Tracker is a finance app financial management tool that helps users track their expenses efficiently.</p>
+      <div class="image-grid">
+        <img src="Assets/ExpenseTracker/HomeView.PNG" alt="Home view">
+        <img src="Assets/ExpenseTracker/HomeView2.PNG" alt="Home 2 view">
+        <img src="Assets/ExpenseTracker/CategoryDetailView.PNG" alt="Category detail view">
+        <img src="Assets/ExpenseTracker/AddTransactionView.PNG" alt="Add transaction view">
+      </div>
+      <div class="tags">
+        <div class="tag">Swift</div>
+        <div class="tag">SwiftUI</div>
+        <div class="tag">Core Data</div>
+        <div class="tag">Charts</div>
+      </div>
+      <p><a href="https://github.com/cybernick255/expense-tracker" target="_blank">View on GitHub</a></p>
+    </div>
+  </div>
+
+  <div class="modal" id="modal5">
+    <div class="modal-content">
+      <button class="close-btn" onclick="closeModal('modal5')">&times;</button>
+      <h2>E-Commerce</h2>
+      <p>E-Commerce is a simple shopping app that provides a sleek and modern interface for users to browse products and add them to their cart.</p>
+      <div class="image-grid">
+        <img src="Assets/E-Commerce/HomeView.PNG" alt="Home view">
+        <img src="Assets/E-Commerce/HomeView2.PNG" alt="Home 2 view">
+        <img src="Assets/E-Commerce/HomeView3.PNG" alt="Home 3 view">
+        <img src="Assets/E-Commerce/ItemDetailView.PNG" alt="Item detail view">
+        <img src="Assets/E-Commerce/CartView.PNG" alt="Cart view">
+      </div>
+      <div class="tags">
+        <div class="tag">Swift</div>
+        <div class="tag">SwiftUI</div>
+      </div>
+      <p><a href="https://github.com/cybernick255/e-commerce" target="_blank">View on GitHub</a></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
